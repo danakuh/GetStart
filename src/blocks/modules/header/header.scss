@@ -1,0 +1,165 @@
+// @mixin back($bg-color) {
+//     @if($bg-color == #000){
+//         background: #000;
+//         color: #fff;
+//     }
+//     @else{
+//         background: $bg-color;
+//         color: #000;
+//         border: inset 5px purple;
+//     }
+// }
+
+// div{
+//     @include back(yellow);
+//     margin: 25px;
+//     padding: 14px;
+// }
+
+// @mixin width($column,$margin) {
+//     $w:(100%/$column)-($margin*2);
+//     width: $w;
+//     float: left;
+//     margin: $margin;
+//     text-align:justify;
+// }
+
+// div{
+//     @include width(5,2%);
+// }
+
+.bg-header{
+    background: $p-1;
+}
+.logo-2{
+    @include fonts($light,$font-regular,transparent,9pt);    
+}
+.logo-1 span{
+    @include fonts($p-3,$font-regular,transparent,17pt);    
+    text-transform: uppercase;
+}
+.logo-1 span:last-child{
+    @include fonts($p-3,$font-regular,transparent,10pt);    
+    text-transform: uppercase;
+}
+.logo-1{
+    margin-bottom: -30px;
+    @include fonts($light,$font-logo,transparent,35pt);    
+}
+h1 img{
+    margin-right: 0;
+}
+.bg-header ul{
+    margin-bottom: 0;
+    padding: 0;
+    list-style-type: none;
+    
+}
+.bg-header .row{
+    padding: 10px;
+    cursor: pointer;
+}
+.bg-header ul li a{
+    @include fonts($light,$font-medium,transparent,12pt);    
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.bg-header ul li a:hover{
+    color: $d3-1;
+    text-decoration: none;
+}
+
+.circle{
+    border-radius: 50%;
+    border: solid 1px $light;
+    padding: 7px;
+}
+
+.circle:hover{
+    border: solid 1px $d3-1;
+}
+.active, .bg-header ul li a:active{
+    color: $d3-1;
+    text-decoration: none;
+}
+
+.sub-menu-1{
+    display: none;
+}
+.bg-header ul li:hover .sub-menu-1{
+    display: flex;
+    position: absolute;
+}
+.bg-header ul li:hover{
+    cursor: pointer;
+}
+
+.botton-1{
+    @include fonts($light,$font-medium,$d1-1,12pt);    
+    padding: 5px 30px 5px 30px;
+    border-radius: 5px;
+}
+
+.botton-2{
+    @include fonts($light,$font-medium,$p-2,12pt);    
+    padding: 5px 30px 5px 30px;
+    border-radius: 5px;
+}
+ul li{
+    
+}
+#menuToggle {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #menuToggle input {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0; 
+    z-index: 1;
+  }
+  
+  #menuToggle span{
+    width: 25px;
+    height: 4px;
+    margin-bottom: 5px;
+    background: $light;
+    border-radius: 4px;
+    -webkit-transition: all .5s cubic-bezier(.08,.81,.87,.71);
+    -moz-transition: all .5s cubic-bezier(.08,.81,.87,.71);
+    -ms-transition: all .5s cubic-bezier(.08,.81,.87,.71);
+    -o-transition: all .5s cubic-bezier(.08,.81,.87,.71);
+    transition: all .5s cubic-bezier(.08,.81,.87,.71);
+  }
+  
+  #span1 {
+    transform-origin: 4px 0px;
+  }
+  
+  #span3 {
+    transform-origin: bottom right;
+  }
+  
+  #menuToggle input:checked ~ #span1 {
+    background-color: $d3-1;
+    transform: rotate(45deg) translate(6px);
+  }
+  #menuToggle input:checked ~ #span2 {
+    background-color: $d3-1;
+    transform: rotate(495deg) translate(2px);   
+  }
+  #menuToggle input:checked ~ #span3 {
+    background-color: $d3-1;
+    transform: rotate(45deg);
+    opacity: 0;
+  }

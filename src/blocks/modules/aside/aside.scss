@@ -1,0 +1,205 @@
+
+
+form {
+  position: relative;
+ 
+  margin: 10px auto;
+}
+
+input {
+  width: 100%;
+  height: 42px;
+  background: $l3-4;
+  padding-left: 15px;
+  border: 1px solid $l2-4;
+}
+button {
+  height: 26px;
+  width: 26px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: $l3-4;
+  cursor: pointer;
+  border: none;
+}
+button:before {
+    font-size: 20px;
+  font-weight: bold;
+}
+.cooperation{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+
+.blue-back{
+    width: 100%;
+    height: 376px;
+    background: $p-1;
+    padding-top: 10%;
+}
+
+.round-box{
+    width: 80%;
+    height: 212px;
+    background: $d1-1;
+    border-radius: 10px;
+    border: dashed 3px $light;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.headline-aside{
+    @include fonts($d1-1,$font-bold,transparent,15px);
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.nav-aside{
+    background: $l3-1;
+    border-top: solid 1px $p-1;
+    padding: 10px;
+    margin-bottom: 25px;
+    
+}
+
+.nav-aside ul li i{
+    color: $d1-1;
+    font-size: 13px;
+}
+
+.nav-aside li{
+    @include fonts($d2-4,$font-medium,transparent,13px);
+    text-transform: uppercase;
+    padding: 10px;
+    border-bottom: solid 1px $l2-1;
+
+}
+
+.nav-aside li:last-child{
+    border: none;
+}
+
+figure{
+    margin-left: 0;
+    border-bottom: solid 1px $l2-4;
+    width: 100%;
+    padding-bottom: 25px;
+}
+
+figure img{
+    width: 100%;
+}
+
+figure .heading{
+    @include fonts($d3-4,$font-bold,transparent,15px);
+    margin: 10px 0 10px 0;
+}
+
+figure .data{
+    @include fonts($l1-4,$font-regular,transparent,12px);
+}
+
+
+figure .data i{
+margin-right: 5px;
+}
+
+.border-bottom{
+    border-bottom: 1px solid $l2-4;
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+
+.image{
+   position: absolute;
+   margin-left: 10px;
+   margin-top: -10px;
+}
+
+
+.boy{
+    position: absolute;
+    margin-left: -10%;
+    margin-top: 60%;
+ }
+
+ .round-box p:first-child{
+     @include fonts($light,$font-bold,transparent,13px);
+     text-align: center;
+     margin-bottom: -40px;
+ }
+
+ .round-box p{
+    @include fonts($l1-3,$font-regular,transparent,40px);
+    text-align: center;
+    margin-bottom: -10px;
+}
+
+.round-box p span{
+    vertical-align: super;
+    font-size: 20px;
+}
+.round-box .text{
+    @include fonts($light,$font-regular,transparent,13px);
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+
+.button-aside{
+    margin-top: 20px;
+    border-radius: 5px;
+    width: 100%;
+    @include fonts($light,$font-bold,$d1-1,13px);
+    padding: 10px 40px 10px 70px;
+}
+
+.button-aside a{
+    @include fonts($light,$font-bold,$d1-1,13px);
+    text-decoration: none;
+
+}
+
+.text-aside{
+    @include fonts($d2-4,$font-regular,transparent,10px);
+
+}
+
+aside{
+    margin-bottom: 40px;
+}
+
+
+
+@media screen and (min-width:768px) and (max-width:991px) {
+    .aside{
+        display: block;
+    }
+    .cooperation{
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+    .button-aside{
+        margin-top: 20px;
+        border-radius: 5px;
+        width: 100%;
+        @include fonts($light,$font-bold,$d1-1,13px);
+        padding: 10px 20px 10px 25px;
+    }
+}
+@media screen and (min-width:992px) and (max-width:1200px) {
+    .aside{
+        display: block;
+    }
+}
+@media screen and (max-width:767px) {
+    .aside{
+        display: none;
+    }
+}

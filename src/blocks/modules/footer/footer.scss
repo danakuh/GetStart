@@ -1,0 +1,54 @@
+.footer{
+    background: $p-1;
+    padding-bottom: 30px;
+}
+
+.footer-nav{
+    @include fonts($light,$font-regular,transparent,10px);
+    margin-left: 20px;
+}
+.border-footer{
+    border-bottom: $l2-1 1px solid;
+    width: 100%;
+}
+
+.section-number ul{
+    @include fonts($light,$font-medium,transparent,15px);
+    margin-bottom: 30px;
+}
+
+.section-number li{
+    @include fonts($light,$font-light,transparent,15px);
+    margin-bottom: 10px;
+    list-style-type: none;
+    
+}
+.section-number{
+    border-bottom: $l2-1 1px solid;
+}
+
+.contacts{
+    color: $light;
+    margin-top: 20px;
+    margin-left: -20px;
+}
+.contacts div{
+    @include fonts($light,$font-regular,transparent,12px);
+
+} 
+.icons i{
+margin-right: 20px;
+}
+.icons-contact i{
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+@media screen and (min-width:320px) and (max-width:767px) {
+    .margins{
+        margin-bottom: 20px;
+    }
+    li{
+        display: block;
+    }
+}

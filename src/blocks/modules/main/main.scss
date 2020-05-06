@@ -1,0 +1,117 @@
+
+
+h1{
+    color: $d3-4;
+    font-family: 'Poppins', sans-serif;
+    font-size: 35pt;
+}
+
+h2{
+    color: $d2-4;
+    font-family: 'Poppins', sans-serif;
+    font-size: 33pt;
+    font-weight: 500;
+}
+.bg-blue{
+    color: $light;
+    font-family: 'Poppins', sans-serif;
+    font-size: 33pt;
+    font-weight: 500;
+    background-color: $d1-1;
+    padding: 5px;
+}
+h3{
+    color: $d3-4;
+    font-family: 'Poppins', sans-serif;
+    font-size: 27pt;
+    font-weight: 600;
+}
+h4{
+    color: $d3-4;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22pt;
+    font-weight: 500;
+}
+h5{
+    color: $d3-4;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17pt;
+    font-weight: 500;
+}
+h6{
+    color: $d3-4;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15pt;
+    font-weight: 500;
+}
+p{
+    color: $d1-4;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14pt;
+    line-height: 22pt;
+}
+
+.color-orange li i{
+    color: $p-2;
+}
+.quotation{
+    color: $d1-1;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17pt;
+    line-height: 30pt;
+    margin-right: 10px;
+    border-left: 2px solid $d1-1;
+    background-color: $l3-1;
+    padding: 20px;
+}
+
+.subtitle-bg{
+    color: $light;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20pt;
+    line-height: 22pt;
+    font-weight: 500;
+    background-color: $d1-1;
+    padding: 10px;
+}
+
+ul li{
+    color: $d1-4;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15pt;
+    line-height: 22pt;
+    font-weight: 500;
+    list-style-type: none;
+}
+ul li i{
+    color: $d1-1;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15pt;
+    line-height: 22pt;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.subtitle{
+    color: $d1-4;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20pt;
+    line-height: 22pt;
+    font-weight: 500;
+}
+
+p:last-child{
+    column-count:2;
+}
+
+main{
+    margin-bottom: 40px;
+
+}
+
+@media screen and (min-width:320px) and (max-width:767px) {
+    
+    p:last-child{
+        column-count:1;
+    }
+}

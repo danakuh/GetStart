@@ -1,0 +1,15 @@
+@mixin fonts($color,$font,$bg-color,$font-size) {
+    color: $color;
+    font-family: $font;
+    background-color: $bg-color;
+    font-size: $font-size;
+}
+
+@mixin subtitle($color,$font,$bg-color,$font-size) {
+    color: $d1-4;
+    font-family: 'Poppins', sans-serif;
+    background-color: red;
+    font-size: 20pt;
+    line-height: 22pt;
+    font-weight: 500;
+}

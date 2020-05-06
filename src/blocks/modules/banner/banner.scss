@@ -1,0 +1,34 @@
+
+.color{
+    background: $l3-1;
+}
+.text-page{
+    background: url("../img/town.png") center no-repeat;
+    height: 270px;
+    
+}
+
+.image h1{
+    @include fonts($d3-4,$font-bold,transparent,35px);    
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+}
+
+.image ul li{
+    list-style-type: none;
+}
+
+.image ul li a{
+    @include fonts($l1-4,$font-light,transparent,12px);
+    text-transform: uppercase;    
+    text-decoration: none;
+    margin-right: 20px;
+}
+.image ul li a:hover{
+    @include fonts($d3-4,$font-medium,transparent,12px);
+
+}
+
+.image i{
+    margin-left: 20px;
+}
